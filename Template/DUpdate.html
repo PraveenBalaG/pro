@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Details</title>
+    <style>
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #4f89a7;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+    }
+    .label{
+    position:absolute;
+    left: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.btn{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1E90FF;
+    justify-self: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    bottom: -0px;
+    left: 30px;
+    border-radius: 5px;
+
+}
+.btn1{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d48840;
+    justify-self: center;
+    align-items: center;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    bottom:-20px;
+    left: -400px;
+    border-radius: 5px;
+}
+.tx{
+    position: relative;
+    bottom:260px;
+    left: -280px;
+    font-size: x-large;
+}
+.tf{
+    position: relative;
+    bottom:220px;
+    left: -280px;
+}
+.qt{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+    position: relative;
+    bottom:0px;
+    left: -600px;
+}
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th class="tx">Name</th>
+        <th class="tx">Email</th>
+        <th class="tx">Developer ID</th>
+        <th class="tx">Password</th>
+        <th class="tx">Action</th>
+    </tr>
+    {% for i in values %}
+    <tr>
+        <td class="tf">{{i.Name}}</td>
+        <td class="tf">{{i.Email}}</td>
+        <td class="tf">{{i.Dev_id}}</td>
+        <td class="tf">{{i.Password}}</td>
+        <td class="tf">
+            <a href="/edit/{{i.id}}">Edit</a>
+            <a href="/delete/{{i.id}}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+{% if a %}
+<form method="post">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>
+                <label class="label">Name</label>
+            </td>
+            <td class="qt">
+              {{a.Name}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label">Developer ID</label>
+            </td>
+            <td class="qt">
+                {{a.Dev_id}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label">Email</label>
+            </td>
+            <td class="qt">
+                <input type="text" name="email" value="{{a.Email}}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label">Password</label>
+            </td>
+            <td class="qt">
+                <input type="text" name="password" value="{{a.Password}}">
+            </td>
+        </tr>
+        <tr>
+            <td class="qt">
+                <input type="submit" value="Update">
+            </td>
+        </tr>
+    </table>
+    <div><a href="companyhome.html">Home</a></div>
+</form>
+{% endif %}
+</body>
+</html>

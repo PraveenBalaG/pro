@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        body{
+            height: 100vh;
+            background: #7fc9eb;
+        }
+    .btn1{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: none;
+        color: #ccc;
+        width: 240px;
+        height: 80px;
+        border: 1px solid #338033;
+        font-size: 18px;
+        border-radius: 4px;
+        transition: 0.6s;
+        overflow: hidden;
+     }
+    .btn1:focus{
+        outline: none;
+     }
+    .btn1:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.5);
+        width:60px ;
+        height: 10%;
+        left: 0%;
+        top: 0%;
+        opacity: .5s;
+        filter: blur(30px);
+        transform: translate(-130) skewX(-15deg);
+    }
+    .btn1:after{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.2);
+        width:30px ;
+        height: 100%;
+        left: 30%;
+        top: 0%;
+        opacity: 0;
+        filter: blur(30px);
+        transform: translate(-100px) skewX(-15deg);
+    }
+    .btn1:hover{
+        background: blue;
+        cursor: pointer;
+    }
+    .btn1:hover:before{
+        transform: translate(300px) skewX(-15deg);
+        opacity: .6s;
+        transition: .7s;
+
+    }
+    .btn1:after{
+         transform: translate(300px) skewX(-15deg);
+         opacity: 1;
+         transition: .7s;
+    }
+    .btn2{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: none;
+        color: #ccc;
+        width: 240px;
+        height: 80px;
+        border: 1px solid #338033;
+        font-size: 18px;
+        border-radius: 4px;
+        transition: 0.6s;
+        overflow: hidden;
+     }
+    .btn2:focus{
+        outline: none;
+     }
+    .btn2:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.5);
+        width:60px ;
+        height: 10%;
+        left: 0%;
+        top: 0%;
+        opacity: .5s;
+        filter: blur(30px);
+        transform: translate(-130) skewX(-15deg);
+    }
+    .btn2:after{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.2);
+        width:30px ;
+        height: 100%;
+        left: 30%;
+        top: 0%;
+        opacity: 0;
+        filter: blur(30px);
+        transform: translate(-100px) skewX(-15deg);
+    }
+    .btn2:hover{
+        background: blue;
+        cursor: pointer;
+    }
+    .btn2:hover:before{
+        transform: translate(300px) skewX(-15deg);
+        opacity: .6s;
+        transition: .7s;
+
+    }
+    .btn2:hover:after{
+         transform: translate(300px) skewX(-15deg);
+         opacity: 1;
+         transition: .7s;
+    }
+    .btn3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: none;
+        color: #ccc;
+        width: 400px;
+        height: 80px;
+        border: 1px solid #338033;
+        font-size: 18px;
+        border-radius: 4px;
+        transition: 0.6s;
+        overflow: hidden;
+     }
+    .btn3:focus{
+        outline: none;
+     }
+    .btn3:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.5);
+        width:60px ;
+        height: 10%;
+        left: 0%;
+        top: 0%;
+        opacity: .5s;
+        filter: blur(30px);
+        transform: translate(-130) skewX(-15deg);
+    }
+    .btn3:after{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.2);
+        width:30px ;
+        height: 100%;
+        left: 30%;
+        top: 0%;
+        opacity: 0;
+        filter: blur(30px);
+        transform: translate(-100px) skewX(-15deg);
+    }
+    .btn3:hover{
+        background:blue;
+        cursor: pointer;
+    }
+    .btn3:hover:before{
+        transform: translate(300px) skewX(-15deg);
+        opacity: .6s;
+        transition: .7s;
+
+    }
+    .btn3:hover:after{
+         transform: translate(300px) skewX(-15deg);
+         opacity: 1;
+         transition: .7s;
+    }
+    .btn4{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: none;
+        color: #ccc;
+        width: 600px;
+        height: 80px;
+        border: 1px solid #338033;
+        font-size: 18px;
+        border-radius: 4px;
+        transition: 0.6s;
+        overflow: hidden;
+     }
+    .btn4:focus{
+        outline: none;
+     }
+    .btn4:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.5);
+        width:60px ;
+        height: 10%;
+        left: 0%;
+        top: 0%;
+        opacity: .5s;
+        filter: blur(30px);
+        transform: translate(-130) skewX(-15deg);
+    }
+    .btn4:after{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.2);
+        width:30px ;
+        height: 100%;
+        left: 30%;
+        top: 0%;
+        opacity: 0;
+        filter: blur(30px);
+        transform: translate(-100px) skewX(-15deg);
+    }
+    .btn4:hover{
+        background: blue;
+        cursor: pointer;
+    }
+    .btn4:hover:before{
+        transform: translate(300px) skewX(-15deg);
+        opacity: .6s;
+        transition: .7s;
+
+    }
+    .btn4:hover:after{
+         transform: translate(300px) skewX(-15deg);
+         opacity: 1;
+         transition: .7s;
+    }
+    .btn5{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: none;
+        color: #ccc;
+        width: 600px;
+        height: 80px;
+        border: 1px solid #338033;
+        font-size: 18px;
+        border-radius: 4px;
+        transition: 0.6s;
+        overflow: hidden;
+     }
+    .btn5:focus{
+        outline: none;
+     }
+    .btn5:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.5);
+        width:60px ;
+        height: 10%;
+        left: 0%;
+        top: 0%;
+        opacity: .5s;
+        filter: blur(30px);
+        transform: translate(-130) skewX(-15deg);
+    }
+    .btn5:after{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgb(255,255,255,.2);
+        width:30px ;
+        height: 100%;
+        left: 30%;
+        top: 0%;
+        opacity: 0;
+        filter: blur(30px);
+        transform: translate(-100px) skewX(-15deg);
+    }
+    .btn5:hover{
+        background: blue;
+        cursor: pointer;
+    }
+    .btn5:hover:before{
+        transform: translate(300px) skewX(-15deg);
+        opacity: .6s;
+        transition: .7s;
+
+    }
+    .btn5:after{
+         transform: translate(300px) skewX(-15deg);
+         opacity: 1;
+         transition: .7s;
+    }
+
+
+    a.two{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+    <div><button class="btn1"><a class="two" type="button " href="Newdeveloper.html">DEVELOPER</a></button>
+        <br>
+        <br>
+        <button class="btn2"><a class="two" href="/DUpdate">DEVELOPER DETAILS</a></button>
+        <br>
+        <br>
+        <button class="btn3"><a class="two" href="Newteamlead.html">TEAM LEAD</a></button>
+        <br>
+        <br>
+        <button class="btn4"><a class="two" href="/TLUpdate">TEAM LEAD DETAILS</a></button>
+        <br>
+        <br>
+        <button class="btn5"><a class="two"  type="button" href="companyhome.html">BACK</a></button>
+        </div>
+</body>

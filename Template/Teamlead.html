@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEAM LEAD LOGIN</title>
+    <style>
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #a2cee9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+.container {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 60px;
+  box-sizing: border-box;
+  background: rgb(50, 50, 50);
+  box-shadow: 12px 12px 15px rgb(50, 50, 50), -12px -12px 15px white;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("https://www.kindpng.com/picc/m/53-533328_man-cartoon-suit-businessman-person-manager-male-man.png");
+  background-position: center;
+  background-size: 97px;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px #cbced1, -2px -2px 3px white;
+}
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+}
+.btn{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1E90FF;
+    justify-self: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    bottom: -50px;
+    left: 350px;
+    border-radius: 5px;
+
+}
+.btn1{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d48840;
+    justify-self: center;
+    align-items: center;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    bottom: -100px;
+    left: 290px;
+    border-radius: 5px;
+
+
+}
+button {
+  display: bl;
+  width: 100%;
+  padding: 0px;
+  border: black;
+  outline:black ;
+  box-sizing: border-box;
+}
+.label{
+    position:absolute;
+    left: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.qt1{
+    position: relative;
+    left: 100px;
+    padding: 3px;
+}
+#je{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+#ja{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="brand-logo"></div>
+    <br />
+
+  <div class="brand-title">TL LOGIN</div>
+  <br />
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        <tr>
+        <td><label class="label"><b>TL ID :</b></label></td>
+        <td><input name="manager_id" type="text" class="qt1" id="je"></td>
+        </tr>
+        <tr>
+        <td><label class="label"><b> PASSWORD  :</b></label></td>
+        <td><input name="password" type="password" class="qt1" id="ja"></td>
+        </tr>
+        <tr>
+            <td>
+                <button value="submit" class="btn">LOGIN</button>
+                <a href="companyhome.html" class="btn1">Home</a>
+            </td>
+        </tr>
+        <tr>
+        <td></td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

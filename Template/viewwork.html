@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view Report</title>
+
+    <style>
+      body{
+                  height: 100vh;
+                  background: #7fc9eb;
+              }
+              .btn{
+                  font-family: "Roboto",sans-serif;
+                  font-size: 18px;
+                  font-weight: bold;
+                  background-color: #1E90FF;
+                  justify-self: center;
+                  align-items: center;
+                  width: 150px;
+                  padding: 10px;
+                  text-align: center;
+                  text-decoration: none;
+                  color: azure;
+                  position: absolute;
+                  top: 20%;
+                  left: 0%;
+                  border-radius: 5px;
+                }
+
+                table, th, td {
+                position: center;
+    border: 1px solid black;
+    border-collapse: collapse;}
+
+    .tf{
+        position: relative;
+        bottom:0px;
+        left: 45px;
+    }
+
+
+    </style>
+    </head>
+
+    <body>
+      <table border="1" style="width:100%">
+          <tr>
+              <th class="tx">Project Name</th>
+              <th class="tx">work To Do</th>
+          </tr>
+        {% for i in values %}
+          <tr>
+              <td class="tf">{{i.Project_Name}}</td>
+              <td class="tf">{{i.Work_To_Do}}</td>
+
+          </tr>
+        {% endfor %}
+      </table>
+      <div><button class="btn3"><a class="btn"  href="Developermanu.html">Back</a></button></div>
+    </body>
+    </html>

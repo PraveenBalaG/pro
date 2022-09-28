@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Lead REGISTRATION</title>
+    <style>
+
+body {
+margin: 0;
+width: 100vw;
+height: 100vh;
+background: linear-gradient();
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+place-items: center;
+overflow: hidden;
+font-family: poppins;
+}
+.container {
+  position:absolute;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 60px;
+  box-sizing: border-box;
+  background: rgb(10, 30, 50);
+  box-shadow: 12px 12px 15px rgb(50, 50, 50), -12px -12px 15px white;
+  }
+  .brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("https://www.kindpng.com/picc/m/53-533328_man-cartoon-suit-businessman-person-manager-male-man.png");
+  background-position: center;
+  background-size: 97px;
+  margin: center;
+  border-radius: 50%;
+  position:absolute;
+  left: 48%;
+  top: 15%;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px #cbced1, -2px -2px 3px white;
+}
+
+.brand-title {
+  margin-top: -150px;
+  position:absolute;
+  left: 47%;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+}
+.brand-logo {
+height: 100px;
+width: 100px;
+background-image:url("https://icon2.cleanpng.com/20180320/icq/kisspng-web-development-php-software-developer-programmer-computer-user-icon-svg-5ab0fde8b1e707.4897380415215487767287.jpg");
+background-position: center;
+background-size: 97px;
+margin: auto;
+border-radius: 50%;
+box-sizing: border-box;
+box-shadow: 2px 2px 3px #cbced1, -2px -2px 3px white;
+}
+.brand-title {
+  margin-top: -150px;
+  position:absolute;
+  left: 38%;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+  }
+.btn{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1E90FF;
+    justify-self: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    bottom: -120px;
+    left: 120px;
+    border-radius: 5px;
+
+}
+
+.label{
+    position:absolute;
+    left: 40%;
+    bottom:52%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.label1{
+    position:absolute;
+    left: 40%;
+    bottom:46%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.label2{
+    position:absolute;
+    left: 40%;
+    bottom:40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.label3{
+    position:absolute;
+    left: 40%;
+    bottom:34%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.qt{
+    position: relative;
+    left: 30px;
+    bottom:-52px;
+    padding: 10px;
+}
+
+#je{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+#ja{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+#js{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+#jf{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+  </style>
+</head>
+<body>
+
+
+  <div class="container"></div>
+    <div class="brand-logo"></div>
+    <br />
+
+  <div class="brand-title">Team Lead REGISTRATION</div>
+
+<form method="post">
+{% csrf_token %}
+    <table>
+      <tr>
+        <td>
+          <label class="label">NAME :</label>
+        </td>
+        <td>
+          <input type="text" name="name" class="qt" id="je">
+        </td>
+      </tr>
+        <tr>
+        <td>
+          <label class="label1">E-MAIL :</label>
+        </td>
+        <td>
+          <input  type="text" name="email" class="qt" id="ja">
+        </td>
+      </tr>
+        <tr>
+            <td>
+                <label class="label2">Team-Lead ID :</label>
+            </td>
+            <td>
+                <input type="text" name="manager_id" class="qt" id="js">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label3">PASSWORD :</label>
+            </td>
+            <td>
+                <input  type="password" name="password" class="qt" id="jf">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="submit" value="ADD" class="btn">
+            </td>
+        </tr>
+    </table>
+    <div><a href="manageuser">Back</a></div>
+</form>
+</body>
+</html>

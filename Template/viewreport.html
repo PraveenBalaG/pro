@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>approve</title>
+    <style type="text/css">
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background:rgb(255, 255, 255) ;
+
+        }
+        .table-container{
+            padding:0 10% ;
+            margin: 40px auto 0;
+
+        }
+        .table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th{
+            background-color:
+        }
+        .table thead tr th{
+            font-size: 14px;
+            font-weight: 600px;
+            letter-spacing: 0.35px;
+            color: #000000;
+            opacity: 1;
+            padding: 12px;
+            vertical-align: top;
+            border: 2px solid #000000;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .table thead tr td {
+            font-size: 14px;
+            letter-spacing: .035px;
+            font-weight: normal;
+            color: #f1f1f1;
+            background-color:#3c3f44;
+            padding: 8px;
+            text-align: center;
+            border: 2px solid #000000;
+        }
+        .table .text_open{
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.35px;
+            color: #FF1046;
+        }
+    .table thead tr td .btn{
+    font-family: "Helvetica",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1E90FF;
+    justify-self: center;
+    align-items: center;
+    width: 100px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+    position: absolute;
+    top: 17%;
+    left: 89%;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+
+<table class="table">
+    <thead class="table-container">
+    <tr>
+            <th>Project Name</th>
+            <th>Developer Name</th>
+            <th>Project Report</th>
+            <th>Status</th>
+            <th>Verify</th>
+    </tr>
+    </thead>
+    {% for i in values %}
+       <thead class="table-container">
+        <tr>
+            <td>{{i.Project_Name}}</td>
+            <td data-label="Dev Name">{{i.Dev_Name}}</td>
+            <td data-label="Project Report">{{i.Project_Report}}</td>
+            <td data-label="Action">{{i.Status}}<span class="text_open"></span></td>
+            <td data-label="#"><a href="/approve/{{i.id}}" >Approve</a></td>
+        </tr>
+        </thead>
+        {% endfor %}
+    </table>
+    </body>
+    </html>

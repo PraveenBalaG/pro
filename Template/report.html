@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>report</title>
+<style >
+
+      #a{
+       padding:40px;
+       }
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5cccd4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+  }
+        .brand-title {
+        margin-top: 10px;
+        font-weight: 900;
+        font-size: 1.8rem;
+        color: black;
+        letter-spacing: 1px;
+        position: relative;
+          bottom: 80px;
+          left: -15px;
+        }
+
+        .btn{
+          font-family: "Roboto",sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          background-color: #1E90FF;
+          justify-self: center;
+          align-items: center;
+          width: 150px;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          color: azure;
+          position: relative;
+          bottom: -20px;
+          left: -135px;
+          border-radius: 5px;
+        }
+
+.na{
+    position : relative;
+    left : 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+.dna{
+  position : relative;
+  left : 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.re{
+  position : relative;
+  left : 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.naa{
+  position :relative;
+  left : 68px;
+  padding : 3px;
+}
+.dnaa{
+  position :relative;
+  left : 68px;
+  padding : 3px;
+}
+.ree{
+  position :relative;
+  left : 68px;
+  padding : 3px;
+}
+#je{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+#ja{
+    border:none;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+#js{
+    border-radius: 50px;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+ </style>
+    <title>Title</title>
+</head>
+<body>
+  <div class="container">
+    <div class="brand-logo"></div>
+    <br />
+    <div class="brand-title">REPORT SUBMISSION</div>
+<form method="post">
+    {% csrf_token %}
+    <br>
+    <table>
+      <tr>
+        <td>
+          <label class="na">PROJECT NAME</label>
+        </td>
+        <td>
+          <input class="naa" type="text" name="projectname" size="30"  id="je">
+        </td>
+      </tr>
+        <tr>
+        <td>
+          <label class="dna">DEVELOPER NAME</label>
+        </td>
+        <td>
+          <input class="dnaa" type="text" name="dev_name"  size="30"  id="ja">
+        </td>
+      </tr>
+        <tr>
+            <td>
+                <label class="re">REPORT</label>
+            </td>
+            <td>
+                <textarea class="ree" name="report" id="js">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+                <input class="btn" type="submit" value="Submit">
+               <div> <a href="Developermanu.html">Back</a>
+            </div>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assign Work</title>
+    <style>
+        body{
+            background-color: rgb(247, 245, 160);
+        }
+        .la{
+            position: absolute;
+            left: 5%;
+            top: 30%;
+            font-family: "Roboto",sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .oi{
+            position: absolute;
+            right: 60%;
+            top: 30%;
+            cursor: auto;
+            border-radius: 5%;
+            border-width: 0.5ch;
+            width: 15%;
+            height: 5%;
+        }
+        .lla{
+            position: absolute;
+            right: 40%;
+            top: 30%;
+            font-family: "Roboto",sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        #a{
+            position: absolute;
+            left: 65%;
+            top: 30%;
+            cursor: auto;
+            border-radius: 10%;
+            border-width: 1ch;
+        }
+        .hai{
+            position: absolute;
+            left: 70%;
+            top: 70%;
+            font-family: "Roboto",sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #d48840;
+            width: 80px;
+            padding: 5px;
+            text-decoration: none;
+            color: azure;
+            border-radius: 5px;
+        }
+        .hi{
+            position: absolute;
+            left: 30%;
+            top: 70%;
+            font-family: "Roboto",sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #1E90FF;
+            width: 45px;
+            padding: 10px;
+            text-decoration: none;
+            color: azure;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <table>
+      <tr>
+        <td>
+          <label class="la">Project Name</label>
+        </td>
+        <td>
+          <input class="oi" type="text" name="projectname">
+        </td>
+      </tr>
+        <tr>
+            <td>
+                <label class="lla">Work To Do</label>
+            </td>
+            <td>
+                <textarea id="a" name="work_to_do">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+                <input class="hai" type="submit" value="submit">
+            </td>
+        </tr>
+        <tr>
+            <td><a class="hi" href="Teamleadspace.html">Back</a>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
